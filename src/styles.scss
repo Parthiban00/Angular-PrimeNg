@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeflex/primeflex.css";
+
+// 3rd party libraries
+@import "~primeng/resources/themes/lara-light-indigo/theme.css";
+@import "~primeng/resources/primeng.css";
+
+body {
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+ 
+}
+
+.main-content {
+    overflow: hidden;
+    min-height: 100vh;
+    position: relative;
+    transition: all 300ms ease-in-out
+  }
+
+  .toggle-move-body{
+    margin-left: 300px;
+    transition: all 600ms ease-in-out;
+  }
+
+  .p-scrollpanel {
+    p {
+        padding: .5rem;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    &.custombar1 {
+        .p-scrollpanel-wrapper {
+            border-right: 9px solid var(--layer-1);
+        }
+
+        .p-scrollpanel-bar {
+            background-color: var(--primary-color);
+            opacity: 1;
+            transition: background-color .2s;
+
+            &:hover {
+                background-color: #007ad9;
+            }
+        }
+        .p-scrollpanel-content {
+          padding: 0;
+        }
+    }
+
+    &.custombar2 {
+        .p-scrollpanel-wrapper {
+            border-right: 9px solid var(--layer-1);
+            border-bottom: 9px solid var(--layer-1);
+        }
+
+        .p-scrollpanel-bar {
+            background-color: var(--layer-2);
+            border-radius: 0;
+            opacity: 1;
+            transition: background-color .2s;
+        }
+    }
+}
